@@ -1,0 +1,6 @@
+jobs:
+  test:
+    requires: [~commit]
+    image: node:16
+    steps:
+      - test: ./test.sh
